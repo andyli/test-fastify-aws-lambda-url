@@ -2,6 +2,7 @@ service: test-fastify-aws-lambda-url
 
 provider:
   name: aws
+  runtime: nodejs18.x
 
 functions:
   test:
