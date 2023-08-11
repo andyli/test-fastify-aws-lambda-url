@@ -1,10 +1,10 @@
-service: test-fastify-url
+service: test-fastify-aws-lambda-url
 
 provider:
   name: aws
 
 functions:
-  test-url:
+  test:
     handler: lambda.handler
     events:
       - httpApi: '*'

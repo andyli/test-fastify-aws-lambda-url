@@ -1,5 +1,5 @@
 {
-  "name": "test-fastify-url",
+  "name": "test-fastify-aws-lambda-url",
   "version": "0.0.0",
   "description": "",
   "main": "app.js",
