@@ -1,0 +1,10 @@
+service: test-fastify-url
+
+provider:
+  name: aws
+
+functions:
+  test-url:
+    handler: lambda.handler
+    events:
+      - httpApi: '*'
