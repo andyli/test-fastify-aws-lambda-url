@@ -1,4 +1,10 @@
-const awsLambdaFastify = require('@fastify/aws-lambda')
-const app = require('./app')
-const proxy = awsLambdaFastify(app)
-exports.handler = proxy
+'use strict';
+
+module.exports.endpoint = (event, context, callback) => {
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify(event, null, "\t"),
+  };
+
+  callback(null, response);
+};
